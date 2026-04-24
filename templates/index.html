@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>RAG Chatbot</title>
+
+    <!-- Modern font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="chat-wrapper">
+        <div class="chat-header">🤖 RAG Chatbot</div>
+
+        <div class="upload-bar">
+          <input type="file" id="fileInput" />
+          <button onclick="uploadFile()">Upload</button>
+          <span id="uploadStatus"></span>
+        </div>
+
+        <div id="chatBox" class="chat-box"></div>
+
+        <div class="input-area">
+          <input
+            type="text"
+            id="question"
+            placeholder="Message RAG chatbot..."
+          />
+          <button onclick="askQuestion()">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
